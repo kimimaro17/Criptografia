@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Indice</title>
+        <link rel="stylesheet" href="css/estindi.css">
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="js/header.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div class="logo">Cifrador Afín</div>
+
+                <nav>
+                    <a href="index.html">Inicio</a>
+                    <a href="cifrar/Cifrar.html">Cifrar</a>
+                    <a href="descifrar/Descifrar.html">Descifrar</a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="contenido wrapper">
+            <p><font face=”Arial” size="5">El cifrado afín también se le llama cifrado de 
+                transformación afín o cifrado monoalfabético 
+                genérico. Es un tipo de cifrado por sustitución 
+                en el que cada símbolo del alfabeto en 
+                claro (el alfabeto del texto en claro) es 
+                sustituido por un símbolo del alfabeto 
+                cifrado (el alfabeto del texto cifrado) siendo el 
+                número de símbolos del alfabeto en claro igual que 
+                el número de símbolos del alfabeto cifrado.</font>
+            </p>
+
+            <p><font face=”Arial” size="5">Se conocen como cifradores por 
+                sustitución genéricos monográmicos monoalfabéticos a aquellos
+                sistemas de cifra clásica que obtienen el alfabeto de cifrado 
+                a partir de la ecuación (c= a*m + b mod n), en donde a es una 
+                constante de multiplicación, b una constante de desplazamiento 
+                y n el cuerpo de cifra. Como en inglés se utiliza la palabra 
+                decimation para esta operación de multiplicación, cuyo significado 
+                es aniquilar selectivamente o diezmar, es común que en español 
+                se use decimación, si bien esta palabra no está recogida en la 
+                RAE.
+            </font></p>
+            
+            <p><font face=”Arial” size="5">El cifrado afín es vulnerable 
+                a ataques criptoanalíticos, especialmente ante
+                análisis de frecuencias y la busqueda en el espacio
+                de claves.
+            </font></p>
+
+            <div style="text-align: center;">
+                <p>
+                    <img src="https://sites.google.com/site/criptos2797114109/_/rsrc/1413943288698/criptosistemas-clasicos/xfh.jpg" 
+                    width="500">
+                </p>
+            </div>
+            
+            <p>
+                <h1>Instrrucciones del cifrador</h1>
+            </p>
+            <p>
+                <h2>--------Cifrar--------</h2>
+            </p>
+            <p><font face=”Arial” size="5">
+                Para el cifrador afín es necesario un factor multiplicativo
+                y un factor aditivo, estos valores deben estar en un rango de
+                0 a 100.
+            </font></p>
+            <p><font face=”Arial” size="5">
+                El cifrador solo recive archivos con extensión .txt,
+                otra de las caracteristicas del cifrador es que maneja
+                el abecedario en inglés sumando los caracteres "?", ","
+                y "!" por lo que el mensaje dentro del archivo debera contener
+                solo estos caracteres.
+            </font></p>
+            <p><font face=”Arial” size="5">
+                Al presionar el boton Enviar, nos descargara un archivo
+                con extensión .txt en el cual el contenido sera el mensaje
+                cifrado en letras mayúsculas y omitiendo los espacios en blanco.
+            </font></p>
+
+            <p>
+                <h2>--------Descifrar--------</h2>
+            </p>
+            <p><font face=”Arial” size="5">
+                Al igual que el apartado de cifrado, se necesita un factor multiplicativo
+                y aditivo, para poder descifrar de forma correcta se necesita que
+                estos valores sean los mismos que al cifrar.
+            </font></p>
+            <p><font face=”Arial” size="5">
+                Este apartado solo recive archivos con extensión .txt,
+                el archivo debe tener el mensaje cifrado y en mayúsculas, 
+                las cuales son las condiciones en las que se descarga
+                el archivo en el apartado de Cifrado.
+            </font></p>
+            <p><font face=”Arial” size="5">
+                Al presionar el boton Enviar, nos descargara un archivo
+                con extensión .txt en el cual el contenido sera el mensaje
+                descifrado en letras minusculas y omitiendo los espacios en blanco.
+            </font></p>
+
+            <p>
+                <h1>Videos de interés</h1>
+            </p>
+
+            <div style="text-align: center;">    
+                <p>
+                    <iframe width="544" height="440" src="https://www.youtube.com/embed/owmLwmlvnrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+            </div>
+            <div style="text-align: center;">    
+                <p>
+                    <iframe width="544" height="440" src="https://www.youtube.com/embed/sSL04hd3TDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </p>
+            </div>
+        </section>
+    </body>
+</html>

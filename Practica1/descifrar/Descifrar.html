@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cifrador Afin</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    <body>
+        <form action="descifrar.php" class="form-register" method="post" enctype="multipart/form-data">
+            <h1 class="form__title">Introducir mensaje a descifrar</h1>
+            <div class="container--flex">
+                <label for="" class="form__input">Factor multiplicativo</label>
+                <input type="number" class="form__input" name="alpha" min="0" max="100" required>
+            </div>
+            <div class="container--flex">
+                <label for="" class="form__input">Factor aditivo</label>
+                <input type="number" class="form__input" name="beta" min="0" max="100" required>
+            </div>
+            <input type="file"  name="archivo" class="form__file" required>
+            <input type="submit" class="form__submit">           
+        </form>
+        <a href="../index.html">
+            <button name="button">Regresar</button> 
+        </a> 
+    </body>
+</html>
