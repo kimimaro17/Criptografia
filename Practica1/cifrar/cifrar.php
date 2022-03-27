@@ -20,6 +20,11 @@
     );
 
     if($_FILES["archivo"]) {
+
+        $path = $_FILES["archivo"]["name"];
+        $name = pathinfo($path, PATHINFO_FILENAME);
+        
+
         $nombre_final = "Archivo_Base.txt";
         $ruta = "archivosBase/" . $nombre_final;
         $subirarchivo = move_uploaded_file($_FILES["archivo"]["tmp_name"], $ruta);
@@ -54,7 +59,7 @@
     }
     fclose($newar);
 
-    header("Content-disposition: attachment; filename=ArchivoCifrado.txt");
+    header("Content-disposition: attachment; filename=".$name."_C.txt");
     header("Content-type: application/txt");
     readfile("archivosCifrados/ArchivoCifrado.txt");
 
