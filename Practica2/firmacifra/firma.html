@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Firma Digital</title>
+        <link rel="stylesheet" href="estilos.css">
+    </head>
+    
+    <body>
+        <form action="firma.php" class="form-register" method="post" enctype="multipart/form-data">
+            <h1 class="form__title">Introducir mensaje para firmar</h1>
+            <div>
+                Llave privada en formato txt:
+            </div>
+            <input type="file"  name="llave" class="form__file" required>
+            <div>
+                Mensaje en formato txt:
+            </div>
+            <input type="file"  name="archivo" class="form__file" required>
+            <input type="submit" class="form__submit">
+        </form>
+        <a href="../index.html">
+            <button name="button">Regresar</button> 
+        </a> 
+    </body>
+</html>
