@@ -45,7 +45,7 @@
     $direccion = "archivosCifrados/firmadito.txt"; 
     $newar = fopen($direccion, "w+b");
     fwrite($newar, $contenido);
-    fwrite($newar, "****");
+    fwrite($newar, "[[[");
     fwrite($newar, $encry);
     fclose($newar);
 

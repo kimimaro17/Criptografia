@@ -10,7 +10,7 @@
     <body>
         <header>
             <div class="wrapper">
-                <div class="logo">Cifrador Afín</div>
+                <div class="logo">Firma Digital</div>
 
                 <nav>
                     <a href="llaves/genkey.php">Generar llaves</a>
@@ -21,38 +21,40 @@
         </header>
 
         <section class="contenido wrapper">
-            <p><font face=”Arial” size="5">El cifrado afín también se le llama cifrado de 
-                transformación afín o cifrado monoalfabético 
-                genérico. Es un tipo de cifrado por sustitución 
-                en el que cada símbolo del alfabeto en 
-                claro (el alfabeto del texto en claro) es 
-                sustituido por un símbolo del alfabeto 
-                cifrado (el alfabeto del texto cifrado) siendo el 
-                número de símbolos del alfabeto en claro igual que 
-                el número de símbolos del alfabeto cifrado.</font>
+            <p><font face=”Arial” size="5">La firma electrónica es un 
+                conjunto de datos electrónicos que acompañan o que están 
+                asociados a un documento electrónico y cuyas funciones 
+                básicas son identificar al firmante de manera inequívoca,
+                asegurar la integridad del documento firmado. Asegura que 
+                el documento firmado es exactamente el mismo que el 
+                original y que no ha sufrido alteración o manipulación,
+                asegurar el no repudio del documento firmado. Los datos que utiliza 
+                el firmante para realizar la firma son únicos y exclusivos y, 
+                por tanto, posteriormente, no puede decir que no ha firmado 
+                el documento.</font>
             </p>
 
-            <p><font face=”Arial” size="5">Se conocen como cifradores por 
-                sustitución genéricos monográmicos monoalfabéticos a aquellos
-                sistemas de cifra clásica que obtienen el alfabeto de cifrado 
-                a partir de la ecuación (c= a*m + b mod n), en donde a es una 
-                constante de multiplicación, b una constante de desplazamiento 
-                y n el cuerpo de cifra. Como en inglés se utiliza la palabra 
-                decimation para esta operación de multiplicación, cuyo significado 
-                es aniquilar selectivamente o diezmar, es común que en español 
-                se use decimación, si bien esta palabra no está recogida en la 
-                RAE.
+            <p><font face=”Arial” size="5">El cifrado asimétrico, también 
+                conocido como criptografía asimétrica o de clave pública, 
+                se utiliza para proteger archivos, carpetas y unidades 
+                completas contra el acceso no autorizado e intercambiar 
+                mensajes confidenciales. Para este propósito, se emplean 
+                unas claves que sirven para cifrar y descifrar los datos.
             </font></p>
             
-            <p><font face=”Arial” size="5">El cifrado afín es vulnerable 
-                a ataques criptoanalíticos, especialmente ante
-                análisis de frecuencias y la busqueda en el espacio
-                de claves.
+            <p><font face=”Arial” size="5">A diferencia de la criptografía 
+                simétrica, con este método los usuarios no comparten una 
+                clave secreta común (clave privada), sino que cada usuario 
+                crea su propio par de claves, que consiste en una clave 
+                secreta o privada y una clave pública. Cualquier persona 
+                que tenga la clave pública puede enviar datos cifrados al 
+                propietario de la clave privada, verificar su firma digital 
+                o autenticar su identidad.
             </font></p>
 
             <div style="text-align: center;">
                 <p>
-                    <img src="https://sites.google.com/site/criptos2797114109/_/rsrc/1413943288698/criptosistemas-clasicos/xfh.jpg" 
+                    <img src="https://virtual.itca.edu.sv/Mediadores/cms/cifrado_asimetrico.PNG" 
                     width="500">
                 </p>
             </div>
@@ -61,44 +63,57 @@
                 <h1>Instrrucciones del cifrador</h1>
             </p>
             <p>
-                <h2>--------Cifrar--------</h2>
+                <h2>--------Generar llaves--------</h2>
             </p>
             <p><font face=”Arial” size="5">
-                Para el cifrador afín es necesario un factor multiplicativo
-                y un factor aditivo, estos valores deben estar en un rango de
-                0 a 100.
-            </font></p>
-            <p><font face=”Arial” size="5">
-                El cifrador solo recive archivos con extensión .txt,
-                otra de las caracteristicas del cifrador es que maneja
-                el abecedario en inglés sumando los caracteres "'", ",", "()"
-                y "?" por lo que el mensaje dentro del archivo debera contener
-                solo estos caracteres, el mensaje original puede tener letras en mayúsculas.
-            </font></p>
-            <p><font face=”Arial” size="5">
-                Al presionar el boton Enviar, nos descargara un archivo
-                con extensión .txt en el cual el contenido sera el mensaje
-                cifrado en letras mayúsculas y omitiendo los espacios en blanco.
+                Al presionar esta opción se descargara un documento text
+                llamado llavero el cual contendrá tanto la llave pública como
+                la llave privada.
             </font></p>
 
             <p>
-                <h2>--------Descifrar--------</h2>
+                <h2>--------Firma Digital--------</h2>
             </p>
             <p><font face=”Arial” size="5">
-                Al igual que el apartado de cifrado, se necesita un factor multiplicativo
-                y aditivo, para poder descifrar de forma correcta se necesita que
-                estos valores sean los mismos que al cifrar.
+                Al presionar esta opción reenviara al usuario un formulario
+                en el cual se necesitara enviar un texto en plano y un archivo
+                con la llave privada del usuario, ambos en formato txt, el 
+                archivo de la llave debe tener un formato similar al siguiente
+                ejemplo:
             </font></p>
-            <p><font face=”Arial” size="5">
-                Este apartado solo recive archivos con extensión .txt,
-                el archivo debe tener el mensaje cifrado y en mayúsculas, 
-                las cuales son las condiciones en las que se descarga
-                el archivo en el apartado de Cifrado.
-            </font></p>
+            <div style="text-align: center;">
+                <p>
+                    <img src="imagenes/formatollave.JPG" 
+                    width="500">
+                </p>
+            </div>
             <p><font face=”Arial” size="5">
                 Al presionar el boton Enviar, nos descargara un archivo
                 con extensión .txt en el cual el contenido sera el mensaje
-                descifrado en letras minusculas y omitiendo los espacios en blanco.
+                en plano junto con un marcador [[[ y la firma.
+            </font></p>
+
+            <p>
+                <h2>--------Verificación--------</h2>
+            </p>
+            <p><font face=”Arial” size="5">
+                Al presionar esta opción reenviara al usuario un formulario
+                en el cual se necesitara enviar el archivo firmado y un archivo
+                con la llave pública del usuario que firmo, ambos en formato txt, el 
+                archivo de la llave debe tener un formato similar al siguiente
+                ejemplo:
+            </font></p>
+            <div style="text-align: center;">
+                <p>
+                    <img src="imagenes/publica.JPG" 
+                    width="500">
+                </p>
+            </div>
+            <p><font face=”Arial” size="5">
+                Al presionar el boton Enviar, nos mostrara un mensaje de exito
+                en la verificación en caso de que el mensaje no haya sido modificado
+                y la llave pública coinicida con la llave privada de quien firmó. En
+                caso contrario mostrara un mensaje de error en la verificación.
             </font></p>
 
             <p>
@@ -107,12 +122,12 @@
 
             <div style="text-align: center;">    
                 <p>
-                    <iframe width="544" height="440" src="https://www.youtube.com/embed/owmLwmlvnrU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="544" height="440" src="https://www.youtube.com/embed/SIIqLgqRMCo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </p>
             </div>
             <div style="text-align: center;">    
                 <p>
-                    <iframe width="544" height="440" src="https://www.youtube.com/embed/sSL04hd3TDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="544" height="440" src="https://www.youtube.com/embed/apn1BN6XMVo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </p>
             </div>
         </section>
